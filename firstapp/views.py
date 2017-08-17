@@ -10,16 +10,16 @@ def index(request):
         'items': items,
         })
 
-def item_detail(request, id): 
+# def item_detail(request, id): 
     #takes id that we will use to query an item using .get method
     #if id not found, then use try except block
-    try: 
-        item=Item.objects.get(id=id)
-    except Item.DoesNotExist: 
-            raise Http404('This item does not exist')
-    return render(request, 'inventory/item_detail.html', {
-'item': item,
-})
+#     try: 
+#         item=Item.objects.get(id=id)
+#     except Item.DoesNotExist: 
+#             raise Http404('This item does not exist')
+#     return render(request, 'inventory/item_detail.html', {
+# 'item': item,
+# })
 
 def projectone(request): 
 
