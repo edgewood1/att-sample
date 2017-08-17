@@ -1,8 +1,9 @@
 # att-sample
 This app contains two projects - two ways of displaying a table. 
 
-from the terminal, go to the att-sample folder
-type: python manage.py runserver
+After you've downloaded and unzipped your zipped file, 
+go to the att-sample folder,
+and from the terminal, type: python manage.py runserver
 
 PROJECT ONE
 In the browser, go to localhost:8000/projectone
