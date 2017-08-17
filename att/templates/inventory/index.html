@@ -1,0 +1,23 @@
+{% extends "base.html"%} {% block content %}
+<h3> People on List </h3>
+<table>
+    <tr>
+        <th> First Name </th>
+        <th> Last Name </th>
+        <th>Home </th>
+    </tr>
+    {%for item in items%}
+    <tr>
+        <td>
+            {{item.first_name}}
+        </td>
+        <td>
+            {{item.last_name}}
+        </td>
+        <td>
+            {{item.home}}
+        </td>
+    </tr>
+    {%endfor%}
+    </ul>
+    {% endblock %}
